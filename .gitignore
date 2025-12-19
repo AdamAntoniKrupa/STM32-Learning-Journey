@@ -1,0 +1,13 @@
+# Ignoruj foldery kompilacji
+Debug/
+Release/
+.settings/
+
+# Ignoruj pliki konfiguracyjne użytkownika
+.mxproject
+*.launch
+
+# Ignoruj pliki tymczasowe
+*.su
+*.o
+*.d
