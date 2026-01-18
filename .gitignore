@@ -2,6 +2,7 @@
 Debug/
 Release/
 .settings/
+.metadata/
 
 # Ignoruj pliki konfiguracyjne użytkownika
 .mxproject
