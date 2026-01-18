@@ -97,8 +97,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      HAL_GPIO_WritePin(LD2_Pin, 1);
-      HAL
+      HAL_GPIO_TogglePin(GPIOA, LD2_Pin);
+      HAL_Delay(500);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
