@@ -40,3 +40,69 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2026-01-18 01:50:39.301
 !MESSAGE Won't launch debug session since we failed to locate the binary.
+!SESSION 2026-01-18 14:26:31.463 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-01-18 14:26:38.075
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-01-18 14:26:38.077
+!MESSAGE Log4j2 initialized with config file C:\Users\adamt\Desktop\Tinkering\STM-32_nucleoF446RE\STM-32 Learning\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-01-18 14:26:44.490
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-01-18 21:46:59.960 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-01-18 21:47:06.579
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-01-18 21:47:06.582
+!MESSAGE Log4j2 initialized with config file C:\Users\adamt\Desktop\Tinkering\STM-32_nucleoF446RE\STM-32 Learning\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-01-18 21:47:12.176
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-01-18 21:48:41.670 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-01-18 21:48:46.126
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-01-18 21:48:46.127
+!MESSAGE Log4j2 initialized with config file C:\Users\adamt\Desktop\Tinkering\STM-32_nucleoF446RE\STM-32 Learning\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-01-18 21:48:49.882
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-01-18 21:49:29.129 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-01-18 21:49:33.742
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-01-18 21:49:33.745
+!MESSAGE Log4j2 initialized with config file C:\Users\adamt\Desktop\Tinkering\STM-32_nucleoF446RE\STM-32 Learning\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-01-18 21:49:37.448
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-18 21:50:53.114
+!MESSAGE Indexed '01_First_Blinky' (20 sources, 82 headers) in 3.23 sec: 5,050 declarations; 26,654 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0063%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-18 21:58:31.901
+!MESSAGE Indexed '02_BlinkyWithoutHAL' (20 sources, 82 headers) in 2.31 sec: 5,050 declarations; 26,644 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0063%)
