@@ -32,8 +32,6 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-#define GPIO_PIN_5_MODER_OUTPUT 0x00000400 //page 186 of reference manual; 11th and 10th bits are used for GPIO 5 of port A, and we write 01, which configures it as an GP output
-
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -53,6 +51,12 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
+
+volatile void myDelay(uint32_t count){
+
+	for(uint32_t Counter = 0; Counter < count; Counter++){};
+
+}
 
 /* USER CODE END PFP */
 
@@ -76,27 +80,35 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+
+  //HAL_Init();
 
   /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
 
   /* Configure the system clock */
-  SystemClock_Config();
+
+  //SystemClock_Config();
+
+  RCC->AHB1ENR &= 0xFFFFFFFE;	//setting bit for enabling gpio port A to 0, to be sure we set 1 in next instruction
+
+  RCC->AHB1ENR |= 0x00000001;	//enabling clock for gpios on port A
 
   /* USER CODE BEGIN SysInit */
 
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_USART2_UART_Init();
+
+  //MX_GPIO_Init();
+  //MX_USART2_UART_Init();
+
   /* USER CODE BEGIN 2 */
 
   GPIOA->MODER &= 0xFFFFF3FF;	//resetting configuration on pin 5, just to be sure
 
-  GPIOA->MODER |= 0xFFFFF4FF;	//setting pin 5 as output, page 186 of reference manual
+  GPIOA->MODER |= 0x00000400;	//setting pin 5 as output, page 186 of reference manual
 
   GPIOA->OTYPER &= 0xFFFFFFDF;	//setting pin 5 output type as push/pull
 
@@ -115,11 +127,11 @@ int main(void)
 
 	  GPIOA->BSRR = 0x00000020;
 
-	  HAL_Delay(500);
+	  myDelay(1000000);
 
 	  GPIOA->BSRR = 0x00200000;
 
-	  HAL_Delay(500);
+	  myDelay(1000000);
 
     /* USER CODE BEGIN 3 */
   }
