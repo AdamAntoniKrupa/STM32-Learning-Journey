@@ -1,12 +1,6 @@
-01:22:58 **** Incremental Build of configuration Debug for project 02_BlinkyWithoutHAL ****
+19:21:57 **** Incremental Build of configuration Debug for project 02_BlinkyWithoutHAL ****
 make -j22 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:226:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
-  226 | static void MX_GPIO_Init(void)
-      |             ^~~~~~~~~~~~
-../Core/Src/main.c:193:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
-  193 | static void MX_USART2_UART_Init(void)
-      |             ^~~~~~~~~~~~~~~~~~~
 arm-none-eabi-gcc -o "02_BlinkyWithoutHAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamt\Desktop\Tinkering\STM-32_nucleoF446RE\STM-32 Learning\01_Fundamentals\02_BlinkyWithoutHAL\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="02_BlinkyWithoutHAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: 02_BlinkyWithoutHAL.elf
  
@@ -17,4 +11,11 @@ arm-none-eabi-objdump -h -S 02_BlinkyWithoutHAL.elf  > "02_BlinkyWithoutHAL.list
 Finished building: default.size.stdout
  
 Finished building: 02_BlinkyWithoutHAL.list
+ 
+19:22:00 **** Incremental Build of configuration Debug for project 02_BlinkyWithoutHAL ****
+make -j22 all 
+arm-none-eabi-size  02_BlinkyWithoutHAL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1052	      4	   1572	   2628	    a44	02_BlinkyWithoutHAL.elf
+Finished building: default.size.stdout
  
